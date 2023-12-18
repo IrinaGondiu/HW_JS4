@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+    <article class="gallery">
+        <img src="img/1.avif" alt="" onclick="zoom()" class="gallery__image">
+    </article>
+  </div>
+
+  <form class="courses">
+    <div>
+        <label>Frontend</label>
+        <select class="courseFrontend">
+            <option value="1600">Javascript</option>
+            <option value="1500">CSS</option>
+            <option value="1400">HTML</option>
+        </select>
+        <input class="input input-1" type="number" placeholder="Quantity">
+    </div>
+
+    <div>
+        <label>Backend:</label>
+        <select class="courseBackend">
+            <option value="2000">Node.js</option>
+            <option value="1900">Python</option>
+            <option value="1800">Ruby</option>
+        </select>
+        <input class="input input-2" type="number" placeholder="Quantity">
+    </div>
+
+    <div>
+        <label>Design:</label>
+        <select class="courseDesign">
+            <option value="1000">Figma</option>
+            <option value="900">Wix</option>
+            <option value="800">Photoshop</option>
+        </select>
+        <input class="input input-3" type="number" placeholder="Quantity">
+      </div>
+
+    <button type="button" onclick="totalPrice()">Buy courses</button>
+    <h4 class="price"></h4>
+</form>
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
